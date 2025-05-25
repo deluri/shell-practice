@@ -10,11 +10,12 @@ else
     echo "You are running with root user"
 fi
 
-dnf install mysqlwewew -y
+dnf install mysql -y
 
 if [ $? -eq 0 ]
 then
     echo "Installing MySql is....SUCCESS"
 else
     echo "Installing MySql is....FAILURE"
+    exit 1
 fi
